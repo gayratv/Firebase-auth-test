@@ -1,3 +1,4 @@
 https://firebase.google.com/docs/auth
 
+npm i -S firebase firebaseui
 
