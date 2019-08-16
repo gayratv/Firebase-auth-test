@@ -50,6 +50,10 @@ const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
+// const __rootDIR = __dirname.substr(1,__dirname.length - "/config".length);
+const __rootDIR ="E:/_prgs/Firebase/auth_UI/";
+
+
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function(webpackEnv) {
@@ -290,6 +294,7 @@ module.exports = function(webpackEnv) {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
+        '~a': path.resolve(__rootDIR, 'src/components/auth'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
